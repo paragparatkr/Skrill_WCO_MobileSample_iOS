@@ -32,29 +32,9 @@ final class PaymentViewController: UIViewController {
     }()
 
     @objc private func didTapButton() {
-        /// This is the URL that iOS clients are opening after sending request to Skrill Wallet Checkout.
-        /// It could either contain query parameters or session ID.
-        ///
-        /// !!! Please note that now you have to pass ``return_url`` parameter. !!!
-        ///
-        /// You app should support Universal Links in order to continue with the deeplinking.
-        /// More information for Universal links can be found here:
-        /// https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
-        /// and better overview for app side support of universal links
-        /// https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app
-
-        /// You might be receiving the link with a Session ID. It's still a valid approach as long as
-        /// ``return_url`` parameter is passed to the request that returns Skrill Wallet Checkout session ID
-        let skrillWalletCheckoutURL = "https://pay.eu-qa.sandbox.dw-cloud.net/"
-        let merchantID = "merchant_id=1"
-        let amount = "amount=1"
-        let currency = "currency=USD"
-        let prefilledEmail = "pay_from_email=your.customers.email@mail.com"
-        let paymentMethod = "payment_methods=WLT"
-        let returnURL = "return_url=\(Constant.skrillWalletCheckoutDeeplinkURL)"
-        let queryParameters = "?\(merchantID)&\(amount)&\(currency)&\(prefilledEmail)&\(paymentMethod)&\(returnURL)"
-
-        guard let url = URL(string: "\(skrillWalletCheckoutURL)\(queryParameters)") else {
+        /// skrillWalletCheckoutURL = This is the URL that iOS clients are opening after sending request to Payment handles API (redirect_payment) 
+        
+        guard let url = URL(string: "skrillWalletCheckoutURL") else {
             return
         }
 

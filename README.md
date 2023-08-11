@@ -1,7 +1,7 @@
 # Sample iOS project aiming to provide guidelines for Skrill Checkout integration.
 
 # Overview
-On June 30, the US bank Chase stops supporting in-process webview traffic. This topic raises the need for update to Skrill Checkout integration guidelines for mobile applications.
+On September 30, the US bank Chase stops supporting in-process webview traffic. This topic raises the need for update to Skrill Checkout integration guidelines for mobile applications.
 
 Our recommendation is to start Skrill Checkout Out of process via browser. An essential part of being able to keep a good UX is to be able to redirect the customer from the browser back to the merchant's app once the payment is completed.
 

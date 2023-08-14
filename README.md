@@ -1,7 +1,7 @@
 Sample iOS project aiming to provide guidelines for Skrill Payment Method integration via Payments API.
 
 # Overview
-On September 30, the US bank Chase stops supporting in-process webview traffic. his topic raises the need for updated Skrill payment method integration guidelines for mobile applications.
+On September 30, the US bank Chase stops supporting in-process webview traffic. This topic raises the need for updated Skrill payment method integration guidelines for mobile applications.
 
 Our recommendation is to start Skrill in an Out of process via browser. An essential part of being able to keep a good UX is to be able to redirect the customer from the browser back to the merchant's app once the payment is completed.
 

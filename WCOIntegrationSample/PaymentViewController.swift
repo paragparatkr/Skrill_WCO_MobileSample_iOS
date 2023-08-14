@@ -32,7 +32,7 @@ final class PaymentViewController: UIViewController {
     }()
 
     @objc private func didTapButton() {
-        /// skrillWalletCheckoutURL = This is the URL that iOS clients are opening after sending request to Payment handles API (redirect_payment) 
+        /// skrillWalletCheckoutURL = This is the URL which is returned in paymentHandles API response (redirect_payment). iOS clients will open this url.
         
         guard let url = URL(string: "skrillWalletCheckoutURL") else {
             return

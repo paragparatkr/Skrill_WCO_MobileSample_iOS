@@ -43,7 +43,7 @@ final class PaymentViewController: UIViewController {
     }
 
     func didFinishDeeplinking() {
-        /// Method is invoked after deeplink passed to Skrill Wallet Checkout was triggerd
+        /// Method is invoked after deeplink was triggerd
         /// After the execution has return to the module you can continue with the flow
         /// by polling for payment status or keep the current approach.
         ///

@@ -1,4 +1,4 @@
-# Sample iOS project aiming to provide guidelines for Payments API integration for Skrill Payment method.
+Sample iOS project aiming to provide guidelines for Skrill Payment Method integration via Payments API.
 
 # Overview
 On September 30, the US bank Chase stops supporting in-process webview traffic. his topic raises the need for updated Skrill payment method integration guidelines for mobile applications.

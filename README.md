@@ -10,8 +10,7 @@ In order to keep the good UX the merchant app have to initialize Skrill Checkout
 ##Technical guidelines
 1. Skrill redirect_payment url should be loaded in a browser (out-of-process).
 2. Universal Link and Associated domain should be registered in the application. 
-3. Host a json file on your domain on this particular URL https://<fully qualified domain>/.well-known/apple-app-site-association with appLinks componentes describing the deeplinking points to your app.
-More information in Apple's documentation: https://developer.apple.com/documentation/xcode/supporting-associated-domains
+3. Host a json file on your domain on this particular URL https://<fully qualified domain>/.well-known/apple-app-site-association with appLinks componentes describing the deeplinking points to your app.More information in Apple's documentation: https://developer.apple.com/documentation/xcode/supporting-associated-domains
 Implement your deeplinking logic in your app's AppDelegate file. https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
   
 # About this sample

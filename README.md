@@ -8,10 +8,10 @@ Our recommendation is to start Skrill Checkout Out of process via browser. An es
 In order to keep the good UX the merchant app have to initialize Skrill Checkout with ``return_url`` which on the other hand should be registered in the app as Universal Link and Associated Domain. This means that when the payment is made and the browser loads the return_url then the app will be able to intercept that url and get back to foreground again.
 
 Technical guidelines
-Skrill redirect_payment url should be loaded in a browser (out-of-process).
-Universal Link and Associated domain should be registered in the application. Step-by-step guide
-Host a json file on your domain on this particular URL 
-https://<fully qualified domain>/.well-known/apple-app-site-association
+1. Skrill redirect_payment url should be loaded in a browser (out-of-process).
+2. Universal Link and Associated domain should be registered in the application. Step-by-step guide
+3. Host a json file on your domain on this particular URL 
+4. https://<fully qualified domain>/.well-known/apple-app-site-association
 with appLinks componentes describing the deeplinking points to your app.
 More information in Apple's documentation: https://developer.apple.com/documentation/xcode/supporting-associated-domains
 Implement your deeplinking logic in your app's AppDelegate file. https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
